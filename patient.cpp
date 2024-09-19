@@ -55,6 +55,7 @@ void Patient::ParseFIO(std::string FIO){
     if (flag != 2){
         _name = "";
         _surname = "";
+        throw std::runtime_error("Err");
     }
     _patronomic = temp;
     temp = "";
